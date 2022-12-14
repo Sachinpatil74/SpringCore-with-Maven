@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+    
+    
+    <!-- AUTO WIRING TYPES
+    1.byType
+    2.byName
+    3.byConstructor
+   
+    -->
+   
+    <!-- ADDRESS BEANS -->
+    <bean class="com.springcore.autowire.Address" id="address">
+     <property name="street" value="Temp" />
+     <property name="city" value="delhi" />
+    </bean>
+    
+    
+    
+    <!-- EMP BEANS -->
+   <bean class="com.springcore.autowire.Emp" id="emp1" autowire="byType" />
+   
+   
+    
+</beans>

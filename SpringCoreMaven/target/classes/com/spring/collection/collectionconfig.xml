@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!-- NAME -->
+    
+    <bean class="com.spring.collection.Emp" id="e">
+    <property name="name" value="Sachin patil"></property>
+    
+     <!-- List of Phones -->
+     
+     <property name="phones">
+     <list>
+     <value>44582</value>
+     <value>44582</value>
+     <value>45544582</value>
+     <value>5944582</value>
+     </list>
+     </property>
+     
+     <!-- list of Address -->
+     
+     <property name="address">
+     <set>
+     <value>indore</value>
+     <value>pithampur</value>
+     <value>rau</value>
+     <value>mhow</value>
+     </set>
+     </property>
+ 
+   <!-- List of Courses --> 
+   
+   <property name="courses">
+   <map>
+         <entry key="java" value="2months"></entry>
+         <entry key="python" value="2months"></entry>
+         <entry key="c+" value="2months"></entry>
+         <entry key="react" value="2months"></entry>
+   </map>
+   </property>
+   
+   <!-- list of Properties -->
+   
+ 
+   
+    </bean>
+    
+   
+ 
+</beans>
